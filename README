@@ -33,6 +33,8 @@ Python Client to Convert a Zeppelin Notebook into: Python or Jupyter Notebook fi
 
 ..
 
-`import zeppelinTo`
+`from zeppelinTo import ZeppelinTo`
+ZeppelinTo.convert_to_python("data/sample-notebook.json")
+ZeppelinTo.convert_to_jupyter("data/sample-notebook.json")
 
 ..
