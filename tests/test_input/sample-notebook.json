@@ -1,0 +1,124 @@
+{
+  "paragraphs": [
+    {
+      "user": "gaiauser",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1585684709573_-300265324",
+      "id": "20200331-195829_1829802623",
+      "dateCreated": "2020-03-31T19:58:29+0000",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500,
+      "focus": true,
+      "$$hashKey": "object:779",
+      "text": "%pyspark\n\nimport random\nfrom pyspark import SparkContext\ndef inside(p):\n    x, y = random.random(), random.random()\n    return x*x + y*y < 1\nNUM_SAMPLES = 1000000\ncount = sc.parallelize(range(0, NUM_SAMPLES)) \\\n             .filter(inside).count()\n",
+      "dateUpdated": "2020-03-31T19:59:06+0000",
+      "dateFinished": "2020-03-31T19:59:07+0000",
+      "dateStarted": "2020-03-31T19:59:06+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      }
+    },
+    {
+      "text": "%pyspark\nprint(\"Pi is roughly %f\" % (4.0 * count / NUM_SAMPLES))",
+      "user": "gaiauser",
+      "dateUpdated": "2020-03-31T19:59:17+0000",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1585684741280_1405829989",
+      "id": "20200331-195901_1049910047",
+      "dateCreated": "2020-03-31T19:59:01+0000",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500,
+      "focus": true,
+      "$$hashKey": "object:1076",
+      "dateFinished": "2020-03-31T19:59:17+0000",
+      "dateStarted": "2020-03-31T19:59:17+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Pi is roughly 3.140032\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%pyspark\n",
+      "user": "gaiauser",
+      "dateUpdated": "2020-03-31T19:59:17+0000",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1585684757392_2070545685",
+      "id": "20200331-195917_1211996567",
+      "dateCreated": "2020-03-31T19:59:17+0000",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500,
+      "focus": true,
+      "$$hashKey": "object:1193"
+    }
+  ],
+  "name": "sample-test",
+  "id": "2F5VRDNCF",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {
+    "spark:shared_process": []
+  },
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {}
+}
