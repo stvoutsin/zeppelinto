@@ -5,9 +5,7 @@ Python Client to Convert a Zeppelin Notebook into: Python or Jupyter Notebook fi
 
 ## Installation Instructions (virtualenv)
 
-### Install pip
-
-### Install virtualenv
+### Install pip & virtualenv
 
 `pip3 install virtualenv`
 
@@ -25,11 +23,11 @@ Python Client to Convert a Zeppelin Notebook into: Python or Jupyter Notebook fi
 `source bin/activate`
 
 
-### Install Firethorn using pip 
+### Install ZeppelinTo using pip 
 
 `pip3 install zeppelinTo/`
 
-## Run Python and import Firethorn
+## Run Python and import ZeppelinTo
 
 `bin/python3.4` 
 
