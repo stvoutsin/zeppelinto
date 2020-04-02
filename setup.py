@@ -18,7 +18,9 @@ setup(
     keywords = "apache zeppelin convert notebook jupyter",
     url = "https://github.com/stvoutsin/zeppelinTo",
     include_package_data = True,  
-    packages=['zeppelinTo','zeppelinTo.notebook','zeppelinTo.tests', 'zeppelinTo.config'],
+    packages=['zeppelinTo','zeppelinTo.notebook','zeppelinTo.tests', 'zeppelinTo'],
+    package_data={'zeppelinTo': ['data/*']},
+
     long_description="README",
     long_description_content_type='text/markdown',
     classifiers=[
@@ -27,4 +29,3 @@ setup(
         "Programming Language :: Python"
     ]
 )
-

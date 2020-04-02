@@ -37,8 +37,8 @@ class ZeppelinTo(object):
 
         """
 
-        if text.find("%pyspark") != -1 and ignore_interpreter_binding==False:
-            if ignore_interpreter_binding==True:
+        if text.find("%pyspark") != -1:
+            if ignore_interpreter_binding==False:
                 text = text.replace("%pyspark", cfg._PYSPARK_CONTEXT_INIT, 1)
             else:
                 text = text.replace("%pyspark", "", 1)
@@ -117,7 +117,7 @@ class ZeppelinTo(object):
                 logging.debug(e)
 
         if cfg._DEBUG:
-            print(f"Python Code: {output}")        
+            print(f"Python Code:\n {output}")        
 
         return self
 
@@ -126,6 +126,10 @@ class ZeppelinTo(object):
         """
         Converts a Zeppelin Notebook to a Jupyter equivalent
         """
+
+        if not self.notebook:
+            print ("No notebook loaded..Unable to convert to Jupyter")
+            return
 
         jupyter_notebook = JupyterNotebook()
 
@@ -166,7 +170,7 @@ class ZeppelinTo(object):
              jupyter_notebook.cells.append(cell)
 
         if cfg._DEBUG:
-            print(f"Jupyter Notebook: {jupyter_notebook.__dict__}")        
+            print(f"Jupyter Notebook:\n {jupyter_notebook.__dict__}")        
 
 
         try:
