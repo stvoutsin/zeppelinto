@@ -1,4 +1,4 @@
-from config import *
-from notebook import *
-from zeppelinTo import *
+from .config import *
+from .notebook import *
+from .zeppelinTo import *
 

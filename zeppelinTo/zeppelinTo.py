@@ -1,9 +1,9 @@
 import json
-from notebook import ZeppelinNotebook
-from notebook import JupyterNotebook
-from notebook import Notebook
+from .notebook import ZeppelinNotebook
+from .notebook import JupyterNotebook
+from .notebook import Notebook
 import logging
-import config as cfg
+from . import config as cfg
 
 class ZeppelinTo(object):
     """

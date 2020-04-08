@@ -1,5 +1,5 @@
 import json
-from notebook import Notebook
+from .notebook import Notebook
 
 
 class JupyterNotebook(Notebook):
