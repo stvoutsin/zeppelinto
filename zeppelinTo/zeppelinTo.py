@@ -1,9 +1,14 @@
+import sys
+from os.path import dirname
+sys.path.append(dirname(__file__))
+sys.path.append(dirname(__file__) + "/notebook")
+sys.path.append(dirname(__file__) + "/tests")
 import json
-from .notebook import ZeppelinNotebook
-from .notebook import JupyterNotebook
-from .notebook import Notebook
+from znotebook import ZeppelinNotebook
+from znotebook import JupyterNotebook
+
 import logging
-from . import config as cfg
+import config as cfg
 
 class ZeppelinTo(object):
     """
@@ -55,14 +60,13 @@ class ZeppelinTo(object):
         """
         if notebook:
 
-            if self.isvalid(notebook):
-                try:
-                    with open(notebook, encoding='utf-8-sig') as notebook_file:
-                        self.notebook = ZeppelinNotebook(data=notebook_file)
-                except Exception as e:
-                    print ("Exception encountered while loading notebook: " + str(e))
-                    if cfg._DEBUG:
-                        logging.debug(e)
+            try:
+                with open(notebook, encoding='utf-8-sig') as notebook_file:
+                    self.notebook = ZeppelinNotebook(data=notebook_file)
+            except Exception as e:
+                print ("Exception encountered while loading notebook: " + str(e))
+                if cfg._DEBUG:
+                    logging.debug(e)
 
         return self
 

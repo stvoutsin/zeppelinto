@@ -1,8 +1,8 @@
 import json
-from .notebook import Notebook
+from .default_notebook import DefaultNotebook
 
 
-class JupyterNotebook(Notebook):
+class JupyterNotebook(DefaultNotebook):
     """
     Class that holds the Jupyter notebook information deserialized from a JSON object
     """

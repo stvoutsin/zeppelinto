@@ -1,6 +1,6 @@
 import json
 
-class Notebook(object):
+class DefaultNotebook(object):
     """
     Class that holds the notebook information deserialized from a JSON object
     """

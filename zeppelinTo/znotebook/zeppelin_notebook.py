@@ -1,8 +1,8 @@
 import json
-from .notebook import Notebook
+from .default_notebook import DefaultNotebook
 
 
-class ZeppelinNotebook(Notebook):
+class ZeppelinNotebook(DefaultNotebook):
     """
     Class that holds the Zeppelin notebook information deserialized from a JSON object
     """
