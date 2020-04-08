@@ -15,13 +15,6 @@ class ZeppelinTo(object):
         self.notebook = notebook
 
 
-    def isvalid(self, notebook):
-        """
-        TODO: Check if valid notebook / Or remove class
-        """
-        return True
-
-
     def _clean_cell(self, text, ignore_interpreter_binding=False):
         """
         Clean a given cell, remove unneeded text and tags
