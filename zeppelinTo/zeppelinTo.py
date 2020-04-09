@@ -114,7 +114,7 @@ class ZeppelinTo(object):
                 logging.debug(e)
 
         if cfg._DEBUG:
-            print(f"Python Code:\n {output}")        
+            print(f"Python Code:\n {output}")
 
         return self
 
@@ -163,11 +163,10 @@ class ZeppelinTo(object):
                  output += "\n"
                  cell["source"].append(output)
                  counter+=1
-
              jupyter_notebook.cells.append(cell)
 
         if cfg._DEBUG:
-            print(f"Jupyter Notebook:\n {jupyter_notebook.__dict__}")        
+            print(f"Jupyter Notebook:\n {jupyter_notebook.__dict__}")
 
 
         try:
@@ -177,7 +176,7 @@ class ZeppelinTo(object):
                 name = cfg._DEFAULT_OUTPUT_DIR + name
 
             with open(name, "wt") as jupyter_file:
-                jupyter_file.write(jupyter_notebook.json_data)
+                jupyter_file.write(jupyter_notebook.json_data + "\n")
         except Exception as e:
             print ("Exception encountered while writing Jupyter Notebook file: " + str(e))
             if cfg._DEBUG:

@@ -10,5 +10,6 @@ RUN pip install pytest
 # Copy over the source code (!modify this section!)
 # If you have other code here you need to copy it too
 COPY zeppelinTo zeppelinTo/
+WORKDIR ./zeppelinTo
 
 CMD ["/bin/bash"]
