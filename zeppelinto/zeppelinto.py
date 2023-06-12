@@ -1,8 +1,8 @@
 import logging
 from os.path import dirname
-from config import config
-from znotebook import ZeppelinNotebook
-from znotebook import JupyterNotebook
+from zeppelinto.config import config
+from zeppelinto.znotebook import ZeppelinNotebook
+from zeppelinto.znotebook import JupyterNotebook
 
 
 class ZeppelinConverter:
