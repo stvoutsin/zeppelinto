@@ -27,9 +27,10 @@ Python Client to Convert a Zeppelin Notebook into: Python or Jupyter Notebook fi
 
     pip3 install zeppelinto/
 
-## Run Python and import ZeppelinTo
+## Run Python and import ZeppelinConverter
 
     python
+    
 
     from zeppelinto import ZeppelinConverter`
     ZeppelinConverter().convert_to_python("data/sample-notebook.json")
