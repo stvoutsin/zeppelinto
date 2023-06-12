@@ -7,34 +7,30 @@ Python Client to Convert a Zeppelin Notebook into: Python or Jupyter Notebook fi
 
 ### Install pip & virtualenv
 
-`pip3 install virtualenv`
+    pip3 install virtualenv
 
 ### Grab a copy of the github project  
 
-`git clone https://github.com/stvoutsin/zeppelinTo.py.git`
+    git clone https://github.com/stvoutsin/zeppelinTo.py.git
 
 ### Initialize a virtual environment in the project directory
 
-`virtualenv --python=/usr/bin/python3 zeppelinTo/`
+    virtualenv --python=/usr/bin/python3 zeppelinto/
 
 ### Activate the virtualenv 
 
-`cd zeppelinTo/`
-`source bin/activate`
+    cd zeppelinTo/
+    source bin/activate
 
 
 ### Install ZeppelinTo using pip 
 
-`pip3 install zeppelinTo/`
+    pip3 install zeppelinto/
 
 ## Run Python and import ZeppelinTo
 
-`bin/python3.4` 
+    python
 
-..
+    from zeppelinto import ZeppelinConverter`
+    ZeppelinConverter().convert_to_python("data/sample-notebook.json")
 
-`from zeppelinTo import ZeppelinTo`
-ZeppelinTo.convert_to_python("data/sample-notebook.json")
-ZeppelinTo.convert_to_jupyter("data/sample-notebook.json")
-
-..
