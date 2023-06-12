@@ -9,17 +9,17 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
-    name = "zeppelinTo",
-    version = "0.1.1",
+    name = "zeppelinto",
+    version = "0.1.2",
     author = "Stelios Voutsinas",
     author_email = "stv@roe.ac.uk",
     description = ("A python suite for converting Zeppelin Notebooks"),
     license = "GNU",
     keywords = "apache zeppelin convert notebook jupyter",
-    url = "https://github.com/stvoutsin/zeppelinTo",
-    include_package_data = True,  
-    packages=['zeppelinTo','zeppelinTo.znotebook','zeppelinTo.tests', 'zeppelinTo'],
-    package_data={'zeppelinTo': ['data/*']},
+    url = "https://github.com/stvoutsin/zeppelinto",
+    include_package_data = True,
+    packages=['zeppelinto','zeppelinto.znotebook','zeppelinto.tests', 'zeppelinto'],
+    package_data={'zeppelinto': ['data/*']},
 
     long_description="README",
     long_description_content_type='text/markdown',

@@ -7,10 +7,9 @@ class JupyterNotebook(DefaultNotebook):
     Class that holds the Jupyter notebook information deserialized from a JSON object
     """
 
-
     def __init__(self, data=None):
-        if data!=None:
-            super(JupyterNotebook,self).__init__(data)
+        if data is not None:
+            super(JupyterNotebook, self).__init__(data)
 
     @property
     def json_data(self):
